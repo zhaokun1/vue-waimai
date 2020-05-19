@@ -1,0 +1,12 @@
+// header背景颜色
+$color: #06C1AE;
+
+// 定义三角形
+@mixin triangle($size:10px, $color: #000, $dir: top) {
+    // 兼容行内元素和块元素
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    border: $size solid transparent;
+    border-#{$dir}-color: $color
+}
